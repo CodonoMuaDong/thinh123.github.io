@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang cá nhân</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Thanh menu dính ở đầu trang -->
+  <header>
+    <nav>
+      <a href="#gioi-thieu">Giới thiệu</a>
+      <a href="#ky-nang">Kỹ năng</a>
+      <a href="#du-an">Dự án</a>
+      <a href="#tro-choi">Trò chơi</a>
+      <a href="#lien-he">Liên hệ</a>
+      <button id="doi-mau" aria-label="Đổi giao diện sáng tối">☾</button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Phần giới thiệu -->
+    <section id="gioi-thieu" class="hero">
+      <div class="avatar">😂</div>
+      <p class="chao">Xin chào, mình là</p>
+      <h1>Nguyễn Trường Thịnh</h1>
+      <p class="mo-ta">
+        Mình đang học lập trình, bắt đầu từ C++ và web.
+        Trang này là sản phẩm đầu tiên mình tự tay viết.
+      </p>
+      <a href="#du-an" class="nut">Xem dự án</a>
+    </section>
+
+    <!-- Phần kỹ năng -->
+    <section id="ky-nang" class="reveal">
+      <h2>Kỹ năng</h2>
+      <div class="the-ky-nang" id="ds-ky-nang"></div>
+
+      <div class="chi-tiet">
+        <h3 id="kn-ten"></h3>
+        <p id="kn-cap"></p>
+        <div class="thanh"><div id="kn-thanh"></div></div>
+        <ul id="kn-da-hoc"></ul>
+        <p id="kn-du-an"></p>
+      </div>
+    </section>
+       <!-- Phần dự án: bấm vào thẻ thì mở hộp nổi có code -->
+    <section id="du-an" class="reveal">
+      <h2>Dự án</h2>
+      <div class="luoi">
+        <article class="the" data-du-an="doan-so" tabindex="0">
+          <h3>Game đoán số</h3>
+          <p>Trò chơi chạy trong console viết bằng C++, có vòng lặp, kiểm tra dữ liệu nhập và kỷ lục.</p>
+          <span class="nhan">C++</span>
+        </article>
+        <article class="the" data-du-an="doan-chu" tabindex="0">
+          <h3>Game đoán chữ</h3>
+          <p>Máy chọn một từ, người chơi đoán từng chữ cái, sai 15 lần thì thua.</p>
+          <span class="nhan">C++</span>
+        </article>
+        <article class="the" data-du-an="trang-ca-nhan" tabindex="0">
+          <h3>Trang cá nhân</h3>
+          <p>Trang bạn đang xem, dựng bằng HTML, CSS và JavaScript thuần.</p>
+          <span class="nhan">Web</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="tro-choi" class="reveal">
+      <h2>Trò chơi</h2>
+      <div class="luoi">
+
+        <article class="the">
+          <h3>Đoán số</h3>
+          <p id="so-thong-bao"></p>
+          <input type="number" id="so-nhap" min="1" max="100">
+          <button id="so-doan">Đoán</button>
+          <button id="so-moi">Ván mới</button>
+        </article>
+
+        <article class="the">
+          <h3>Đoán chữ</h3>
+          <p id="chu-hien-thi" class="tu"></p>
+          <p id="chu-thong-bao"></p>
+          <div id="chu-ban-phim"></div>
+          <button id="chu-moi">Ván mới</button>
+        </article>
+
+      </div>
+    </section> 
+
+    <!-- Phần liên hệ -->
+    <section id="lien-he" class="reveal">
+      <h2>Liên hệ</h2>
+      <p>Bạn có thể nhắn cho mình qua:</p>
+      <ul class="lien-he">
+        <li>Email: thinhneokko@gmail.com</li>
+        <li>GitHub: github.com/thinhneokko</li>
+        <li>Liên hệ: 05846**1** </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© <span id="nam"></span> Thịnh</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
